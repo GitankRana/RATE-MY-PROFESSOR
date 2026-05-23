@@ -29,3 +29,9 @@ A full-stack web application that empowers students to discover, rate, and revie
 - ➕ Any logged-in user can add a professor
 - 🌑 Spotify-inspired dark theme with red accents
 - 
+🧠 What I Learned
+Designing REST APIs and connecting frontend ↔ backend
+Handling async data fetching and error states
+Structuring a scalable full-stack project
+Debugging real-world issues (CORS, routing, MongoDB, async flows)
+Using Git & GitHub for version control
