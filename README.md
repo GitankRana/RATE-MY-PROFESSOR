@@ -4,7 +4,7 @@ A full-stack web application that empowers students to discover, rate, and revie
 
 ---
 
-🔗 Live Demo: rate-my-professor-lyart.vercel.app
+🔗 **Live Demo:** [rate-my-professor-lyart.vercel.app](https://rate-my-professor-lyart.vercel.app)
 
 ## 🛠️ Tech Stack
 
