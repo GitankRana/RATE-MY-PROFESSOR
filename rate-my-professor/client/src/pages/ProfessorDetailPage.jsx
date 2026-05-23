@@ -47,7 +47,7 @@ export default function ProfessorDetailPage() {
 
   const fetchProfessor = async () => {
     try {
-      const res = await fetch(`/api/professors/${id}`);
+      const res = await fetch(`${BASE_URL}/api/professors/${id}`);
       const data = await res.json();
       setProfessor(data);
     } catch (err) {
@@ -69,7 +69,7 @@ export default function ProfessorDetailPage() {
       return;
     }
     try {
-      const res = await fetch(`/api/professors/${id}/reviews`, {
+      const res = await fetch(`${BASE_URL}/api/professors/${id}/reviews`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({ rating, comment, tags }),
@@ -92,7 +92,7 @@ export default function ProfessorDetailPage() {
     const token = localStorage.getItem("token");
     if (!token) { alert("You must be logged in to vote."); return; }
     try {
-      await fetch(`/api/reviews/${reviewId}/like`, {
+      await fetch(`${BASE_URL}/api/reviews/${reviewId}/like`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({ type }),
@@ -105,7 +105,7 @@ export default function ProfessorDetailPage() {
     if (!window.confirm("Delete this review?")) return;
     const token = localStorage.getItem("token");
     try {
-      await fetch(`/api/reviews/${reviewId}`, {
+      await fetch(`${BASE_URL}/api/reviews/${reviewId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -123,7 +123,7 @@ export default function ProfessorDetailPage() {
   const handleSaveEdit = async (reviewId) => {
     const token = localStorage.getItem("token");
     try {
-      await fetch(`/api/reviews/${reviewId}`, {
+      await fetch(`${BASE_URL}/api/reviews/${reviewId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({ rating: editRating, comment: editComment, tags: editTags }),

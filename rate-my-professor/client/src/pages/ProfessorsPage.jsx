@@ -30,7 +30,7 @@ export default function ProfessorsPage() {
   useEffect(() => {
     const fetchProfessors = async () => {
       try {
-        const res = await fetch("/api/professors");
+        const res = await fetch(`${BASE_URL}/api/professors`);
         const data = await res.json();
         setProfessors(data);
       } catch (err) {

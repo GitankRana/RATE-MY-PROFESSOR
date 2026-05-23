@@ -27,7 +27,7 @@ export default function ProfilePage() {
 
   const fetchMyReviews = async () => {
     try {
-      const res = await fetch("/api/reviews/mine", {
+      const res = await fetch(`${BASE_URL}/api/reviews/mine`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const data = await res.json();
@@ -44,7 +44,7 @@ export default function ProfilePage() {
   const handleDelete = async (reviewId) => {
     if (!window.confirm("Delete this review?")) return;
     try {
-      await fetch(`/api/reviews/${reviewId}`, {
+      await fetch(`${BASE_URL}/api/reviews/${reviewId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` }
       });

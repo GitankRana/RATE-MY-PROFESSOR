@@ -29,7 +29,7 @@ export default function AddProfessorPage() {
     if (!token) { navigate("/login"); return; }
 
     try {
-      const res = await fetch("/api/professors", {
+      const res = await fetch(`${BASE_URL}/api/professors`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
