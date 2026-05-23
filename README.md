@@ -1,6 +1,6 @@
 # 🎓 Rate My Professor
 
-A full-stack web application that empowers students to discover, rate, and review their professors. Built with a sleek dark UI, real-time data, and a focus on honest, student-driven feedback.
+A full-stack web application that empowers students to discover, rate, and review their professors. Built with a sleek dark UI inspired by Spotify, real-time data, and a focus on honest, student-driven feedback.
 
 ---
 
@@ -28,11 +28,13 @@ A full-stack web application that empowers students to discover, rate, and revie
 - 👤 Personal profile page with your review history and stats
 - ➕ Any logged-in user can add a professor
 - 🌑 Spotify-inspired dark theme with red accents
-- 
-##🧠 What I Learned
 
--Designing REST APIs and connecting frontend ↔ backend
--Handling async data fetching and error states
--Structuring a scalable full-stack project
--Debugging real-world issues (CORS, routing, MongoDB, async flows)
--Using Git & GitHub for version control
+
+## 🧠 What I Learned
+
+- How to architect a full-stack application from scratch — structuring a REST API with Express, connecting it to a PostgreSQL database via Prisma, and consuming it from a React frontend
+- Implementing JWT-based authentication end-to-end, from hashing passwords and signing tokens on the server to protecting routes and decoding payloads on the client
+- Designing relational database schemas with real-world relationships — users, professors, reviews, and likes — and writing efficient Prisma queries with nested includes
+- Debugging CORS issues, proxy misconfigurations, and environment-specific errors across a monorepo setup
+- Building reusable React components and managing UI state across multiple pages without a global state library
+- How small UX details — loading skeletons, color-coded badges, hover states, and toast feedback — dramatically improve the feel of an app
