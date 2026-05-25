@@ -29,7 +29,7 @@ A full-stack web application that empowers students to discover, rate, and revie
 - 🎨 Color-coded rating badges — green, yellow, and red
 - 👤 Personal profile page with your review history and stats
 - ➕ Any logged-in user can add a professor
-- 🌑 Spotify-inspired dark theme with red accents
+- 🌑 Spotify-inspired dark theme with red accents.
 
 
 ## 🧠 What I Learned
